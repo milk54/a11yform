@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="みるくが作った意地悪問題フォームをアクセシブルにマークアップした例です。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第6回　D2Dアクセシビリティ勉強会 - アクセシブルなフォーム例</title>
+<link rel="stylesheet" href="style.css" media="all">
+</head>
+<body>
+<section>
+<p id="logo"><a href="/"><img src="img/sitelogo.png" alt="D2D(Dev&amp;Design Draft)"></a></p>
+<form method="get" action="#" role="search" id="search_area">
+<label for="search">検索キーワード</label><input type="text" maxlength="100" placeholder="検索キーワードを入力してください" name="#" id="search">
+<button type="submit"><img src="img/btn_search.png" alt="検索する"></button>
+</form>
+<h1>新規会員登録</h1><p class="caution"><span>※</span>は必須項目です。</p>
+<form method="post" action="#" role="form" id="new_member">
+<fieldset><legend>住所</legend>
+<table>
+<tr>
+<th><label for="postal_code">郵便番号<span>※</span></label></th>
+<td class="separate"><input type="text" aria-required="true" id="postal_code" title="上3ケタ" required name="#">―<input type="text" aria-required="true" title="郵便番号下4ケタ" required name="#">
+</td>
+</tr>
+<tr>
+<th><label for="prefectures">都道府県<span>※</span></label></th>
+<td><select id="prefectures" aria-required="true" required><option value="" selected="selected">選択して下さい。</option>
+<option value="100">北海道</option>
+<option value="120">青森県</option>
+<option value="130">岩手県</option>
+<option value="140">宮城県</option>
+<option value="150">秋田県</option>
+</select>
+</td>
+</tr>
+<tr>
+<th><label for="city">市区町村<span>※</span></label></th>
+<td><input type="text" aria-required="true" id="city" required name="#">
+</td>
+</tr>
+<tr>
+<th><label for="house_number">番地・マンション名</label></th>
+<td><input type="text" aria-required="true" id="house_number" name="#">
+</td>
+</tr>
+</table>
+</fieldset>
+<fieldset><legend>お名前・性別</legend>
+<table>
+<tr>
+<th id="fullname">氏名<span>※</span></th>
+<td><label for="surname">姓</label><input type="text" id="surname" aria-required="true" aria-describedby="fullname" required name="#"><label for="firstname">姓</label><input type="text" id="firstname" aria-required="true" aria-describedby="fullname" required name="#">
+</td>
+</tr>
+<tr>
+<th>氏名(ふりがな)</th>
+<td><label for="surname_kana">姓</label><input type="text" id="surname_kana" aria-describedby="name_description" name="#"><label for="firstname_kana">姓</label><input type="text" id="firstname_kana" aria-describedby="name_description" name="#">
+<p id="name_description">ひらがなで入力してください。</p>
+</td>
+</tr>
+<tr>
+<th id="gender">性別<span>※</span></th>
+<td><label for="gender_man"><input type="radio" id="gender_man" aria-describedby="gender" required name="#">男性</label><label for="gender_woman"><input type="radio" id="gender_woman" aria-describedby="gender" required name="#">女性</label>
+</td>
+</tr>
+</table>
+</fieldset>
+<fieldset><legend>連絡先</legend>
+<table class="contact_address">
+<tr>
+<th><label for="tel">電話番号<span>※</span></label></th>
+<td class="separate"><input type="text" aria-required="true" id="tel" title="市外局番" required name="#">―<input type="text" aria-required="true" title="市内局番" required name="#">―<input type="text" aria-required="true" title="加入者番号" required name="#">
+</td>
+</tr>
+<tr>
+<th><label for="mail">メールアドレス<span>※</span></label></th>
+<td><input type="text" aria-required="true" aria-describedby="mail_description" id="mail" required name="#">
+<p role="alert" aria-live="assertive" class="error_message">メールアドレスは半角<br>6文字以上で入力してください。</p>
+<p id="mail_description">半角英数で入力してください。</p>
+</td>
+</tr>
+<tr>
+<th><label for="mail_check">メールアドレス<strong>(確認用)</strong><span>※</span></label></th>
+<td><input type="text" aria-required="true" aria-describedby="check_description" id="mail_check" required name="#"><p id="check_description">確認の為再度入力してください。</p>
+</td>
+</tr>
+</table>
+</fieldset>
+<label for="consent" class="check_consent"><input type="checkbox" id="consent" value="#" name="#">利用規約及びポリシーに同意します。</label>
+<input type="submit" value="登録する">
+</form>
+</section>
+</body>
+</html>

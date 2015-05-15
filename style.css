@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* milkform css by milk */
+
+html, body, div, span, h1, h2, h3, p, a, address, code, del, dfn, em, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 100%;
+	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+
+input, select {
+	padding-left: 5px;
+	border: 1px solid #e6e6e6;
+}
+
+img {
+	border: none;
+	line-height: 1;
+}
+
+span {
+	color: #840828;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	margin-bottom: 15px;
+}
+
+input:focus {
+	border: 1px solid #52b032;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) inset, 0 0 8px rgba(82, 176, 50, 0.6);
+}
+
+section {
+	max-width: 830px;
+	margin: 30px auto;
+	line-height: 1.6;
+}
+
+#logo {
+	float: left;
+	margin-bottom: 30px;
+	width: 248px;
+}
+
+#search_area {
+	float: right;
+	margin-top: 30px;
+}
+
+#search_area label {
+	position: absolute;
+	left: -10000px;
+	overflow: hidden;
+}
+
+#search_area input {
+	width: 243px;
+	height: 27px;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	width: 38px;
+	height: 30px;
+	background: #ffffff;
+	border: none;
+	vertical-align: top;
+}
+
+h1 {
+	clear:both;
+	float: left;
+	margin-bottom: 26px;
+}
+
+p.caution {
+	float: left;
+	margin-top: 8px;
+	margin-left: 70px;
+}
+
+#new_member {
+	clear:both;
+	margin-left: 20px;
+}
+
+table {
+	margin-bottom: 20px;
+	width: 100%;
+	border: 2px solid #7b6971;
+	border-collapse: separate;
+	border-radius: 7px;
+	border-spacing: 0;
+}
+
+table tr:first-child th {
+	border-top-left-radius: 6px;
+}
+
+table tr:last-child th {
+	border-bottom: medium none;
+	border-bottom-left-radius: 6px;
+}
+
+table th {
+	padding: 22px 26px;
+	width: 26%;
+	background: #dfc1d0;
+	border-bottom: 1px solid #7b6971;
+	border-right: 1px solid #7b6971;
+	text-align: left;
+}
+
+table td {
+	position: relative;
+	padding: 22px 24px 22px;
+	border-bottom: 1px solid #7b6971;
+}
+
+table tr:last-child td {
+	border-bottom: medium none;
+}
+
+table th span {
+	margin-left: 14px;
+}
+
+table th strong {
+	display: block;
+}
+
+.contact_address tr:last-child span {
+	float: right;
+	margin-top: -50px;
+}
+
+td input[type='text'] {
+	padding-left: 12px;
+	width: 58%;
+	height: 41px;
+}
+
+td.separate input:first-child, td.separate input:nth-child(2), #postal_code, #surname, #surname_kana {
+	margin-right: 12px;
+	width: 120px;
+}
+
+td.separate input:last-child, td.separate input:nth-child(2), #firstname, #firstname_kana {
+	margin-left: 12px;
+	width: 120px;
+}
+
+#surname, #surname_kana {
+	margin-right:20px;
+	margin-left: 12px;
+} 
+
+select {
+	width: 186px;
+	height: 41px;
+}
+
+#gender_man ,#gender_woman {
+	margin-right: 19px;
+}
+
+#gender_woman {
+	margin-left: 21px;
+}
+
+#mail {
+	float: left;
+}
+
+td p {
+	display: inline;
+	margin-left: 15px;
+	line-height: 1.3;
+	font-size:76%;
+}
+
+.error_message {
+	float: left;
+	padding-left: 19px;
+	background: url("img/icon_caution.gif") no-repeat 0 4px;
+	color: #cc2632;
+}
+
+#mail_description {
+	float: left;
+	margin-top: 3px;
+}
+
+#consent {
+	margin-right: 9px;
+}
+
+.check_consent {
+	display: block;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+input[type='submit'] {
+	display: block;
+	margin: 0 auto;
+	width: 270px;
+	height: 60px;
+	background: #d33382;
+	border-radius: 7px;
+	color: #ffffff;
+	font-size: 250%;
+	font-weight: bold;
+}
+
+/* for max-width 768px */
+
+@media only screen and (max-width: 768px) {
+
+	#logo, #search_area, .p.caution {
+		float: none;
+		margin-left: 10px;
+}
+
+	h1 {
+		margin-left: 10px;
+}
+
+td.separate input:last-child, td.separate input:nth-child(2), #firstname, #firstname_kana, td.separate input:first-child, td.separate input:nth-child(2), #postal_code, #surname, #surname_kana,td p {
+	display: block;
+	margin-left: 0;
+}
+
+td p {
+	margin-top: 5px;
+}
+
+}
