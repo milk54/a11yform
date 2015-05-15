@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/* D2Dform css by milk */
+
+html, body, div, span, h1, h2, h3, p, a, address, code, del, dfn, em, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 100%;
+	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+
+input, textarea {
+	padding: 6px;
+	width: 50%;
+	border: 1px solid #000000;
+}
+
+span {
+	margin-left: 9px;
+	padding: 0 7px;
+	background: #000000;
+	border-radius: 7px;
+	letter-spacing: 3px;
+	color: #ffffff;
+}
+
+input:focus, textarea:focus {
+	border: 1px solid #d33481;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) inset, 0 0 8px rgba(211, 52, 129, 0.6);
+}
+
+section {
+	max-width: 945px;
+	margin: 132px auto 115px;
+	line-height: 1.6;
+}
+
+h1 {
+	margin: 0 auto 38px;
+	padding-bottom: 17px;
+	width: 290px;
+	background: url("img/underline.gif") repeat-x left bottom;
+	text-align: center;
+	font-size: 250%;
+}
+
+p {
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+form {
+	margin: 0 auto;
+	width: 50%;
+}
+
+dt {
+	margin-bottom: 10px;
+}
+
+dd {
+	margin-bottom: 22px;
+}
+
+#address,
+#inquiry_content {
+	width: 100%;
+}
+
+input[type='radio'] {
+	margin-left: 48px;
+	padding: 0 8px 0 0;
+	width: auto;
+}
+
+#about_a {
+	margin-left: 0;
+}
+
+input[type='submit'] {
+	display: block;
+	margin: 0 auto;
+	width: 190px;
+	height: 60px;
+	background: #000000 url("img/arrow.gif") no-repeat 94% 50%;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	color: #ffffff;
+	font-size: 150%;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
