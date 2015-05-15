@@ -67,6 +67,7 @@ section {
 #search_area input {
 	width: 243px;
 	height: 27px;
+	border-radius: 0;
 }
 
 button {
@@ -146,7 +147,8 @@ table th strong {
 	margin-top: -50px;
 }
 
-td input[type='text'] {
+td input[type='text'],
+td input[type='tel'] {
 	padding-left: 12px;
 	width: 58%;
 	height: 41px;
