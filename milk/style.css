@@ -234,19 +234,23 @@ input[type='submit'] {
 	#logo, #search_area, .p.caution {
 		float: none;
 		margin-left: 10px;
-}
+	}
 
 	h1 {
 		margin-left: 10px;
-}
+	}
 
-td.separate input:last-child, td.separate input:nth-child(2), #firstname, #firstname_kana, td.separate input:first-child, td.separate input:nth-child(2), #postal_code, #surname, #surname_kana,td p {
-	display: block;
-	margin-left: 0;
-}
+	#new_member {
+		margin-right: 20px;
+	}
 
-td p {
-	margin-top: 5px;
-}
+	td.separate input:last-child, td.separate input:nth-child(2), #firstname, #firstname_kana, td.separate input:first-child, td.separate input:nth-child(2), #postal_code, #surname, #surname_kana,td p {
+		display: block;
+		margin-left: 0;
+	}
+
+	td p {
+		margin-top: 5px;
+	}
 
 }

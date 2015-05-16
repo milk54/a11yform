@@ -95,3 +95,22 @@ input[type='submit'] {
 	font-weight: bold;
 	letter-spacing: 5px;
 }
+
+/* for max-width 768px */
+
+@media only screen and (max-width: 768px) {
+
+	p {
+		margin: 0 auto 100px;
+		width: 298px;
+	}
+
+	.radio_bt label {
+		display: block;
+	}
+
+	input[type="radio"] {
+		margin-left: 0;
+	}
+
+}
