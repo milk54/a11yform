@@ -256,10 +256,6 @@ input[type='submit'] {
 		margin: 0 10px 10px;
 	}
 
-	table {
-		width: auto;
-	}
-
 	table td {
 		padding-left: 11%;
 		padding-right: 0;
@@ -275,7 +271,7 @@ input[type='submit'] {
 	}
 
 	select {
-		width: 150px;
+		width: 148px;
 	}
 
 	#gender_man, #gender_woman {
