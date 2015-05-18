@@ -258,7 +258,7 @@ input[type='submit'] {
 
 	table td {
 		padding-left: 11%;
-		padding-right: 11%;
+		padding-right: 0;
 	}
 
 	td.separate input:last-child, td.separate input:nth-child(2), #firstname, #firstname_kana, td.separate input:first-child, td.separate input:nth-child(2), #postal_code, #surname, #surname_kana,td p {
