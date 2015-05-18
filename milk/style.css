@@ -247,7 +247,8 @@ input[type='submit'] {
 	}
 
 	#new_member {
-		margin-right: 20px;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 
 	p.caution {
