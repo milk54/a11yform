@@ -268,6 +268,14 @@ input[type='submit'] {
 		width: 90%;
 	}
 
+	#gender_man, #gender_woman {
+		margin-right: 5px;
+	}
+
+	#gender_woman {
+		margin-left: 8px;
+	}
+
 	.contact_address tr:last-child span {
 		margin-top: -25px;
 	}
