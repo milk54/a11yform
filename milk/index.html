@@ -7,7 +7,7 @@
 <title>みるくが作った意地悪問題のアクセシブルなフォーム例 - 第6回　D2Dアクセシビリティ勉強会</title>
 <link rel="stylesheet" href="style.css" media="all">
 </head>
-<body>
+<body onload="document.getElementById('error_message').focus()">
 <section>
 <p id="logo"><a href="/"><img src="img/sitelogo.png" alt="D2D(Dev&amp;Design Draft)"></a></p>
 <form method="get" action="#" role="search" id="search_area">
@@ -49,19 +49,19 @@
 <fieldset><legend>お名前・性別</legend>
 <table>
 <tr>
-<th id="fullname">氏名<span>※</span></th>
-<td><label for="surname">姓</label><input type="text" id="surname" aria-required="true" aria-describedby="fullname" name="#"><label for="firstname">名</label><input type="text" id="firstname" aria-required="true" aria-describedby="fullname" name="#">
+<th>氏名<span>※</span></th>
+<td><label for="surname">姓</label><input type="text" id="surname" aria-required="true" title="氏名" name="#"><label for="firstname">名</label><input type="text" id="firstname" aria-required="true" title="氏名" name="#">
 </td>
 </tr>
 <tr>
 <th>氏名(ふりがな)</th>
-<td><label for="surname_kana">姓</label><input type="text" id="surname_kana" aria-describedby="name_description" name="#"><label for="firstname_kana">名</label><input type="text" id="firstname_kana" aria-describedby="name_description" name="#">
+<td><label for="surname_kana">姓</label><input type="text" id="surname_kana" title="氏名(ひながなでふりがな)" aria-describedby="name_description" name="#"><label for="firstname_kana">名</label><input type="text" id="firstname_kana" title="氏名(ひながなでふりがな)" aria-describedby="name_description" name="#">
 <p id="name_description">ひらがなで入力してください。</p>
 </td>
 </tr>
 <tr>
 <th id="gender">性別<span>※</span></th>
-<td><label for="gender_man"><input type="radio" id="gender_man" aria-required="true" aria-describedby="gender" name="#">男性</label><label for="gender_woman"><input type="radio" id="gender_woman" aria-required="true" aria-describedby="gender" name="#">女性</label>
+<td><label for="gender_man"><input type="radio" id="gender_man" title="必須" aria-describedby="gender" name="#">男性</label><label for="gender_woman"><input type="radio" id="gender_woman" aria-describedby="gender" title="必須" name="#">女性</label>
 </td>
 </tr>
 </table>
@@ -76,7 +76,7 @@
 <tr>
 <th><label for="mail">メールアドレス<span>※</span></label></th>
 <td><input type="text" aria-required="true" aria-describedby="mail_description" id="mail" name="#">
-<p role="alert" aria-live="assertive" class="error_message">メールアドレスは半角<br>6文字以上で入力してください。</p>
+<p role="alert" aria-live="assertive" id="error_message" tabindex="-1">メールアドレスは半角<br>6文字以上で入力してください。</p>
 <p id="mail_description">半角英数で入力してください。</p>
 </td>
 </tr>

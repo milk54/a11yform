@@ -193,7 +193,7 @@ td p {
 	font-size:76%;
 }
 
-.error_message {
+#error_message {
 	float: left;
 	padding-left: 19px;
 	background: url("img/icon_caution.gif") no-repeat 0 4px;
