@@ -20,12 +20,12 @@
 <table>
 <tr>
 <th><label for="postal_code">郵便番号<span>※</span></label></th>
-<td class="separate"><input type="text" aria-required="true" id="postal_code" title="上3ケタ" required name="#">―<input type="text" aria-required="true" title="郵便番号下4ケタ" required name="#">
+<td class="separate"><input type="text" aria-required="true" id="postal_code" title="上3ケタ" name="#">―<input type="text" aria-required="true" title="郵便番号下4ケタ" name="#">
 </td>
 </tr>
 <tr>
 <th><label for="prefectures">都道府県<span>※</span></label></th>
-<td><select id="prefectures" aria-required="true" required><option value="" selected="selected">選択して下さい。</option>
+<td><select id="prefectures" aria-required="true"><option value="" selected="selected">選択して下さい。</option>
 <option value="100">北海道</option>
 <option value="120">青森県</option>
 <option value="130">岩手県</option>
@@ -36,7 +36,7 @@
 </tr>
 <tr>
 <th><label for="city">市区町村<span>※</span></label></th>
-<td><input type="text" aria-required="true" id="city" required name="#">
+<td><input type="text" aria-required="true" id="city" name="#">
 </td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@
 <table>
 <tr>
 <th id="fullname">氏名<span>※</span></th>
-<td><label for="surname">姓</label><input type="text" id="surname" aria-required="true" aria-describedby="fullname" required name="#"><label for="firstname">姓</label><input type="text" id="firstname" aria-required="true" aria-describedby="fullname" required name="#">
+<td><label for="surname">姓</label><input type="text" id="surname" aria-required="true" aria-describedby="fullname" name="#"><label for="firstname">姓</label><input type="text" id="firstname" aria-required="true" aria-describedby="fullname" name="#">
 </td>
 </tr>
 <tr>
@@ -61,7 +61,7 @@
 </tr>
 <tr>
 <th id="gender">性別<span>※</span></th>
-<td><label for="gender_man"><input type="radio" id="gender_man" aria-required="true" aria-describedby="gender" required name="#">男性</label><label for="gender_woman"><input type="radio" id="gender_woman" aria-required="true" aria-describedby="gender" required name="#">女性</label>
+<td><label for="gender_man"><input type="radio" id="gender_man" aria-required="true" aria-describedby="gender" name="#">男性</label><label for="gender_woman"><input type="radio" id="gender_woman" aria-required="true" aria-describedby="gender" name="#">女性</label>
 </td>
 </tr>
 </table>
@@ -70,19 +70,19 @@
 <table class="contact_address">
 <tr>
 <th><label for="tel">電話番号<span>※</span></label></th>
-<td class="separate"><input type="tel" aria-required="true" id="tel" title="市外局番" required name="#">―<input type="tel" aria-required="true" title="市内局番" required name="#">―<input type="tel" aria-required="true" title="加入者番号" required name="#">
+<td class="separate"><input type="tel" aria-required="true" id="tel" title="市外局番" name="#">―<input type="tel" aria-required="true" title="市内局番" name="#">―<input type="tel" aria-required="true" title="加入者番号" name="#">
 </td>
 </tr>
 <tr>
 <th><label for="mail">メールアドレス<span>※</span></label></th>
-<td><input type="text" aria-required="true" aria-describedby="mail_description" id="mail" required name="#">
+<td><input type="text" aria-required="true" aria-describedby="mail_description" id="mail" name="#">
 <p role="alert" aria-live="assertive" class="error_message">メールアドレスは半角<br>6文字以上で入力してください。</p>
 <p id="mail_description">半角英数で入力してください。</p>
 </td>
 </tr>
 <tr>
 <th><label for="mail_check">メールアドレス<strong>(確認用)</strong><span>※</span></label></th>
-<td><input type="text" aria-required="true" aria-describedby="check_description" id="mail_check" required name="#"><p id="check_description">確認の為再度入力してください。</p>
+<td><input type="text" aria-required="true" aria-describedby="check_description" id="mail_check" name="#"><p id="check_description">確認の為再度入力してください。</p>
 </td>
 </tr>
 </table>

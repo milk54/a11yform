@@ -237,11 +237,22 @@ input[type='submit'] {
 	}
 
 	h1 {
+		float: none;
 		margin-left: 10px;
+		margin-bottom: 8px;
+	}
+
+	#search_area {
+		margin-bottom: 10px;
 	}
 
 	#new_member {
 		margin-right: 20px;
+	}
+
+	p.caution {
+		float: none;
+		margin: 0 10px 10px;
 	}
 
 	td.separate input:last-child, td.separate input:nth-child(2), #firstname, #firstname_kana, td.separate input:first-child, td.separate input:nth-child(2), #postal_code, #surname, #surname_kana,td p {
@@ -251,6 +262,14 @@ input[type='submit'] {
 
 	td p {
 		margin-top: 5px;
+	}
+
+	select {
+		width: 90%;
+	}
+
+	.contact_address tr:last-child span {
+		margin-top: -25px;
 	}
 
 }
