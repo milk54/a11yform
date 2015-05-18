@@ -275,7 +275,7 @@ input[type='submit'] {
 	}
 
 	select {
-		width: 90%;
+		width: 150px;
 	}
 
 	#gender_man, #gender_woman {
