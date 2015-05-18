@@ -100,6 +100,14 @@ input[type='submit'] {
 
 @media only screen and (max-width: 768px) {
 
+	form {
+		width: 60%;
+	}
+
+	span {
+		padding: 3px 7px;
+	}
+
 	p {
 		margin: 0 auto 100px;
 		width: 298px;
