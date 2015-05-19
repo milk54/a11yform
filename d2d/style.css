@@ -20,9 +20,15 @@ input, textarea {
 	border: 1px solid #000000;
 }
 
+label {
+	display: inline-block;
+	line-height: 1;
+}
+
 span {
+	display: inline-block;
 	margin-left: 9px;
-	padding: 2px 7px;
+	padding: 4px 7px;
 	background: #000000;
 	border-radius: 7px;
 	letter-spacing: 3px;
