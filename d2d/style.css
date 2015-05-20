@@ -91,8 +91,9 @@ input[type='radio'] {
 input[type='submit'] {
 	display: block;
 	margin: 0 auto;
-	width: 190px;
-	height: 60px;
+	width: auto; /* 190px */
+/*	height: 60px; */
+	padding: 15px 19px;
 	background: #000000 url("img/arrow.gif") no-repeat 94% 50%;
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 10px;
