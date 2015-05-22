@@ -11,7 +11,7 @@
 <section>
 <p id="logo"><a href="/"><img src="img/sitelogo.png" alt="D2D(Dev&amp;Design Draft)"></a></p>
 <form method="get" action="#" role="search" id="search_area">
-<label for="search">検索キーワード</label><input type="search" placeholder="検索キーワードを入力してください" name="#" id="search">
+<label for="retrieval_part">検索キーワードを入力してください</label><input type="search" name="#" id="retrieval_part">
 <button type="submit"><img src="img/btn_search.png" alt="検索する"></button>
 </form>
 <h1>新規会員登録</h1><p class="caution"><span>※</span>は必須項目です。</p>
@@ -69,20 +69,20 @@
 <fieldset><legend>連絡先</legend>
 <table class="contact_address">
 <tr>
-<th><label for="tel">電話番号<span>※</span></label></th>
-<td class="separate"><input type="tel" aria-required="true" id="tel" title="市外局番" name="#">―<input type="tel" aria-required="true" title="市内局番" name="#">―<input type="tel" aria-required="true" title="加入者番号" name="#">
+<th><label for="call_number">電話番号<span>※</span></label></th>
+<td class="separate"><input type="tel" aria-required="true" id="call_number" title="市外局番" name="#">―<input type="tel" aria-required="true" title="市内局番" name="#">―<input type="tel" aria-required="true" title="加入者番号" name="#">
 </td>
 </tr>
 <tr>
 <th><label for="mail">メールアドレス<span>※</span></label></th>
-<td><input type="text" aria-required="true" aria-describedby="mail_description" id="mail" name="#">
+<td><input type="text" aria-required="true" aria-describedby="mail_description" id="mail" title="半角英数で入力してください" name="#">
 <p role="alert" aria-live="assertive" id="error_message" tabindex="-1">メールアドレスは半角<br>6文字以上で入力してください。</p>
 <p id="mail_description">半角英数で入力してください。</p>
 </td>
 </tr>
 <tr>
 <th><label for="mail_check">メールアドレス<strong>(確認用)</strong><span>※</span></label></th>
-<td><input type="text" aria-required="true" aria-describedby="check_description" id="mail_check" name="#"><p id="check_description">確認の為再度入力してください。</p>
+<td><input type="text" aria-required="true" aria-describedby="check_description" id="mail_check" title="確認の為再度入力してください" name="#"><p id="check_description">確認の為再度入力してください。</p>
 </td>
 </tr>
 </table>
