@@ -218,8 +218,6 @@ td p {
 input[type='submit'] {
 	display: block;
 	margin: 0 auto;
-/*	width: 270px;
-	height: 60px; */
 	padding: 8px 60px;
 	background: #d33382;
 	border-radius: 7px;
