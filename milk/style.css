@@ -9,7 +9,7 @@ html, body, div, span, h1, h2, h3, p, a, address, code, del, dfn, em, img, stron
 
 body {
 	background-color: #ffffff;
-	color: #000000;
+	color: #222222;
 	font-size: 100%;
 	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","Trebuchet MS",Arial,Helvetica,sans-serif;
 }
@@ -54,14 +54,16 @@ section {
 }
 
 #search_area {
+	position: relative;
 	float: right;
 	margin-top: 30px;
 }
 
 #search_area label {
 	position: absolute;
-	left: -10000px;
-	overflow: hidden;
+	left: 5px;
+	top: 5px;
+	font-size: 90%;
 }
 
 #search_area input {
