@@ -265,6 +265,10 @@ input[type='submit'] {
 		margin-bottom: 10px;
 	}
 
+	button {
+		margin-top: 3px;
+	}
+
 	#new_member {
 		margin-left: 5%;
 		margin-right: 5%;
