@@ -92,15 +92,22 @@
 </form>
 </section>
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=1.6.2'></script>
-<script type="text/javascript">
-$(function () {
-
-$("input[type='search']").focus(function(){
-  $('#search_hint').addClass('keyword');
-    })
-$("input[type='search']") .blur(function(){
-  $('#search_hint').removeClass('keyword');
-    })
-});</script>
+<script src="js/jquery.superLabels.js"></script>
+<script>
+$(function() {
+  var retrieval_part = $('#retrieval_part');
+  var search_hint = $('#search_hint');
+ 
+  // フォーカスイベントハンドラ
+  retrieval_part.focus(function() {
+    if (search_hint.is(':visible')) search_hint.fadeOut(100);
+  })
+ 
+  // フォーカスアウトイベントハンドラ
+  retrieval_part.blur(function() {
+    if ($.trim(retrieval_part.val()) === '') search_hint.fadeIn(100);
+  });
+});
+</script>
 </body>
 </html>
