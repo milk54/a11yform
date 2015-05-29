@@ -11,7 +11,7 @@
 <section>
 <p id="logo"><a href="/"><img src="img/sitelogo.png" alt="D2D(Dev&amp;Design Draft)"></a></p>
 <form method="get" action="#" role="search" id="search_area">
-<label for="retrieval_part" id="search_hint">検索キーワードを入力してください</label><input type="search" name="#" id="retrieval_part">
+<label for="retrieval_part">検索キーワードを入力してください</label><input type="search" name="#" id="retrieval_part">
 <button type="submit"><img src="img/btn_search.png" alt="検索する"></button>
 </form>
 <h1>新規会員登録</h1><p class="caution"><span>※</span>は必須項目です。</p>
@@ -96,10 +96,10 @@
 $(function () {
 
 $("input[type='search']").focus(function(){
-  $('#search_hint').addClass('keyword');
+  $('#search_area label').addClass('keyword');
     })
 $("input[type='search']") .blur(function(){
-  $('#search_hint').removeClass('keyword');
+  $('#search_area label').removeClass('keyword');
     })
 });
 </script>
