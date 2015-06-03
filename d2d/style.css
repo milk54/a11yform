@@ -15,6 +15,8 @@ body {
 }
 
 input, textarea {
+	display: block;
+	margin-bottom: 22px;
 	padding: 6px;
 	width: 50%;
 	border: 1px solid #000000;
@@ -22,6 +24,7 @@ input, textarea {
 
 label {
 	display: inline-block;
+	margin-bottom: 10px;
 	line-height: 1;
 }
 
@@ -36,11 +39,12 @@ span {
 }
 
 input:focus, textarea:focus {
-	border: 1px solid #d33481;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) inset, 0 0 8px rgba(211, 52, 129, 0.6);
+	border: 1px solid #54b032;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) inset, 0 0 8px rgba(84, 175, 50, 0.6);
 }
 
-section {
+main {
+	display: block;
 	max-width: 945px;
 	margin: 132px auto 115px;
 	line-height: 1.6;
@@ -65,20 +69,18 @@ form {
 	width: 50%;
 }
 
-dt {
-	margin-bottom: 10px;
-}
-
-dd {
-	margin-bottom: 22px;
-}
-
 #address,
 #inquiry_content {
 	width: 100%;
 }
 
+#contact_type {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
 input[type='radio'] {
+	display: inline;
 	margin-left: 48px;
 	padding: 0 8px 0 0;
 	width: auto;
