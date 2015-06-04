@@ -55,26 +55,26 @@
           <fieldset><legend>お名前・性別</legend>
             <div class="form-wrap">
               <div class="form-item">
-                <label for="surname">氏名<span>※</span></label>
+                <label id="your-name">氏名<span>※</span></label>
                   <div class="user_action">
                     <label for="surname">姓</label>
-                    <input type="text" id="surname" aria-required="true" title="氏名※" name="#">
+                    <input type="text" id="surname" aria-required="true" title="氏名※" aria-describedby="your-name" name="#">
                     <label for="firstname">名</label>
-                    <input type="text" id="firstname" aria-required="true" title="氏名※" name="#">
+                    <input type="text" id="firstname" aria-required="true" title="氏名※" aria-describedby="your-name" name="#">
                   </div>
               </div>
               <div class="form-item">
-                <label for="surname_kana">氏名(ふりがな)</label>
+                <label>氏名(ふりがな)</label>
                   <div class="user_action">
                     <label for="surname_kana">姓</label>
-                    <input type="text" id="surname_kana" title="氏名(ひながなでふりがな)" aria-describedby="name_description" name="#">
+                    <input type="text" id="surname_kana" title="氏名の姓(ひながなでふりがな)" aria-describedby="name_description" name="#">
                     <label for="firstname_kana">名</label>
-                    <input type="text" id="firstname_kana" title="氏名(ひながなでふりがな)" aria-describedby="name_description" name="#">
+                    <input type="text" id="firstname_kana" title="氏名の名(ひながなでふりがな)" aria-describedby="name_description" name="#">
                     <p id="name_description">ひらがなで入力してください。</p>
                   </div>
               </div>
               <div class="form-item">
-                <label for="gender_man" id="gender" class="last">性別<span>※</span></label>
+                <label id="gender" class="last">性別<span>※</span></label>
                   <div class="user_action">
                   <label for="gender_man"><input type="radio" id="gender_man" title="必須" aria-describedby="gender" name="#">男性</label>
                   <label for="gender_woman"><input type="radio" id="gender_woman" aria-describedby="gender" title="必須" name="#">女性</label>

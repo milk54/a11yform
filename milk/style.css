@@ -114,6 +114,7 @@ h1 {
 .caution {
 	margin-top: 8px;
 	margin-left: 28px;
+	text-decoration: none;
 	font-size: 60%;
 	font-weight: normal;
 }
@@ -162,7 +163,7 @@ h1 {
 .user_action {
 	position: relative;
 	display: table-cell;
-	padding: 22px 24px 22px;
+	padding: 22px 24px;
 }
 
 .user_action label {
@@ -316,9 +317,18 @@ input[type='submit'] {
 		table-layout: fixed;
 	}
 
+	.form-item label {
+		padding: 22px 10px;
+		width: 30%;
+	}
+
 	.form-item input {
 		padding-left: 11%;
 		padding-right: 0;
+	}
+
+	.user_action {
+		padding: 22px 10px;
 	}
 
 	.separate input:last-child, .separate input:nth-child(2), #firstname, #firstname_kana, .separate input:first-child, .separate input:nth-child(2), #postal_code, #surname, #surname_kana, .form-item p {
