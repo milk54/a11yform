@@ -345,8 +345,7 @@ input[type='submit'] {
 	}
 
 	#gender_man, #gender_woman {
-		margin: 0;
-		margin-right: 5px;
+		margin: 0 5px 0 0;
 		padding: 0;
 	}
 
