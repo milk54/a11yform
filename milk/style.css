@@ -228,11 +228,11 @@ select {
 }
 
 #gender_man ,#gender_woman {
-	margin-right: 19px;
+	margin-right: 9px;
 }
 
-#gender_woman {
-	margin-left: 21px;
+.radio_f {
+	margin-right: 26px;
 }
 
 #mail {
@@ -350,6 +350,10 @@ input[type='submit'] {
 
 	#gender_woman {
 		margin-left: 8px;
+	}
+
+	.radio_f {
+		margin-right:0;
 	}
 
 	.contact_address span {
