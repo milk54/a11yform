@@ -114,9 +114,9 @@ h1 {
 .caution {
 	margin-top: 8px;
 	margin-left: 28px;
-	text-decoration: none;
 	font-size: 60%;
 	font-weight: normal;
+	font-style: normal:
 }
 
 #new_member {
@@ -353,6 +353,7 @@ input[type='submit'] {
 	}
 
 	.contact_address span {
+		float: none;
 		margin-top: -25px;
 	}
 
