@@ -83,6 +83,7 @@ form {
 input[type='radio'] {
 	display: inline;
 	margin-left: 48px;
+	margin-right: 10px;
 	padding: 0 8px 0 0;
 	width: auto;
 }
