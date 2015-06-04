@@ -75,7 +75,7 @@ form {
 }
 
 #contact_type {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	width: auto;
 	text-align: left;
 }
@@ -129,6 +129,11 @@ input[type='submit'] {
 
 	input[type="radio"] {
 		margin-left: 0;
+		margin-bottom: 0;
+	}
+
+	#about_c{
+		margin-bottom: 22px;
 	}
 
 }
