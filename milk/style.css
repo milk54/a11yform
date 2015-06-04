@@ -166,7 +166,7 @@ h1 {
 	padding: 22px 24px;
 }
 
-.user_action label {
+.form-item .user_action label {
 	display: inline;
 	padding: 0;
 	width: auto;
@@ -350,10 +350,6 @@ input[type='submit'] {
 
 	#gender_woman {
 		margin-left: 8px;
-	}
-
-	.radio_f {
-		margin-right:0;
 	}
 
 	.contact_address span {
