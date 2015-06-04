@@ -345,11 +345,9 @@ input[type='submit'] {
 	}
 
 	#gender_man, #gender_woman {
-		margin-right: 5px;
-	}
-
-	#gender_woman {
-		margin-left: 8px;
+		/* margin-right: 5px; */
+		margin: 0;
+		padding: 0;
 	}
 
 	.contact_address span {
