@@ -23,7 +23,7 @@
               <div class="form-item">
                 <label for="postal_code">郵便番号<span>※</span></label>
                   <div class="user_action separate">
-                    <input type="text" aria-required="true" id="postal_code" title="上3ケタ" name="#">―<input type="text" aria-required="true" title="郵便番号下4ケタ" name="#">
+                    <input type="number" pattern="\d{3}" aria-required="true" id="postal_code" title="上3ケタ" name="#">―<input type="number" pattern="\d{4}" aria-required="true" title="郵便番号※下4ケタ" name="#">
                   </div>
               </div>
               <div class="form-item">

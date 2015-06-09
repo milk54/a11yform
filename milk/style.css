@@ -197,7 +197,7 @@ h1 {
 	margin-top: -50px;
 }
 
-.form-item input[type='text'], .form-item input[type='tel'] {
+.form-item input[type='text'], .form-item input[type='tel'], .form-item input[type='number'] {
 	padding-left: 12px;
 	width: 58%;
 	height: 41px;
