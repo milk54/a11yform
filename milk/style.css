@@ -75,6 +75,7 @@ header, main {
 	padding-left: 235px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	appearance: none;
 	box-sizing: border-box;
 	border-radius: 0;
 }
@@ -201,6 +202,15 @@ h1 {
 	padding-left: 12px;
 	width: 58%;
 	height: 41px;
+}
+
+input[type='number']::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
 }
 
 .separate {
