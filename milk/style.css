@@ -84,6 +84,7 @@ header, main {
 	position: absolute;
 	left: 5px;
 	top: 4px;
+	width: 275px;
 	font-size: 83%;
 }
 
