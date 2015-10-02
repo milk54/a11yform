@@ -94,24 +94,24 @@ TalkBack
 (入力した文字があり、テキストフィルードにフォーカスしている場合「検索キーワードを入力してください」の後入力した文字を読み上げる)
 バナーサーチ　検索する　バトン
 
-郵便番号　エディットテキスト　ヌーメリックオンリー　リクワイアード
-郵便番号下4ケタ　エディットテキスト　ヌーメリックオンリー　リクワイアード
-都道府県　選択してください。　コンボボックス　リクワイアード　1of6
-市区町村　エディットテキスト　リクワイアード
+郵便番号　エディットテキスト　ヌーメリックオンリー　リクワイヤード
+郵便番号下4ケタ　エディットテキスト　ヌーメリックオンリー　リクワイヤード
+都道府県　選択してください。　コンボボックス　リクワイヤード　1of6
+市区町村　エディットテキスト　リクワイヤード
 番地・マンション名　エディットテキスト
 
-姓　エディットテキスト　リクワイアード　氏名
-名　エディットテキスト　リクワイアード　氏名
+姓　エディットテキスト　リクワイヤード　氏名
+名　エディットテキスト　リクワイヤード　氏名
 姓　エディットテキスト　ひらがなで入力してください。
 名　エディットテキスト　ひらがなで入力してください。
 必須　男性
 必須　女性
 
-電話番号　エディットテキスト　カンマナンバーエントリー　リクワイアード
-市内局番　エディットテキスト　カンマナンバーエントリー　リクワイアード
-加入者番号　エディットテキスト　カンマナンバーエントリー　リクワイアード
-メールアドレス　エディットテキスト　リクワイアード　半角英数で入力してください。
-メールアドレス確認用　エディットテキスト　リクワイアード　確認のため再度入力してください。
+電話番号　エディットテキスト　カンマナンバーエントリー　リクワイヤード
+市内局番　エディットテキスト　カンマナンバーエントリー　リクワイヤード
+加入者番号　エディットテキスト　カンマナンバーエントリー　リクワイヤード
+メールアドレス　エディットテキスト　リクワイヤード　半角英数で入力してください。
+メールアドレス確認用　エディットテキスト　リクワイヤード　確認のため再度入力してください。
 
 利用規約及びポリシーに同意します。
 確認する　バトン
@@ -122,28 +122,74 @@ TalkBack
 ※　type="radio"にはaria-required="true"を使用できない。(バリデータでエラーになる。)
 ※　type="radio"にrequired属性を記述してもPC-Talkerでは「必須」とは読み上げない。NVDAでは「無効なエントリー」と読み上げる。
 ※　required属性のみ時
-　　NVDA
+
+    <label for="name">お名前<span>必須</span></label>
+    <input type="text" id="name" required name="#">
+    <label for="mail">メールアドレス<span>必須</span></label>
+    <input type="text" required id="mail" name="#">
+
+　　[Windows7/NVDA2015.1jp/Firefox38.0.5]
 　　お名前必須　エディット　無効なエントリー　必須　オートコンプリート　空行
 　　メールアドレス必須　エディット　無効なエントリー　必須　オートコンプリート　空行
 
-　　PC-Talker7
+　　[Windows7/PC-Talker7/Internet Explorer11]
 　　お名前必須の文字入力　これは必須フィールドです
 　　メールアドレス必須の文字入力　これは必須フィールドです
 
+　　[iOS 9.0.2/VoiceOver/Safari]
+    お名前必須　テキストフィールド　必須
+　　メールアドレス必須　テキストフィールド　必須
+
+　　[Android4.4.2/TalkBack4.2.0.8/Sブラウザ]
+　　お名前必須　エディトテキスト
+　　メールアドレス必須　エディットテキスト
+
 ※　required属性+aria-required="true"時
-　　NVDA
+
+    <label for="name">お名前<span>必須</span></label>
+    <input type="text" id="name" aria-required="true" required name="#">
+    <label for="mail">メールアドレス<span>必須</span></label>
+    <input type="text" required id="mail" aria-required="true" name="#">
+
+　　[Windows7/NVDA2015.1jp/Firefox38.0.5]
 　　お名前必須　エディット　無効なエントリー　必須　オートコンプリート　空行
 　　メールアドレス必須　エディット　無効なエントリー　必須　オートコンプリート　空行
 
-　　PC-Talker7
+　　[Windows7/PC-Talker7/Internet Explorer11]
 　　お名前必須　必須の文字入力　これは必須フィールドです
 　　メールアドレス必須　必須の文字入力　これは必須フィールドです
 
+　　[iOS 9.0.2/VoiceOver/Safari]
+    お名前必須　テキストフィールド　必須
+　　メールアドレス必須　テキストフィールド　必須
+
+　　[Android4.4.2/TalkBack4.2.0.8/Sブラウザ]
+　　お名前必須　エディットテキスト　リクワイヤード
+　　メールアドレス必須　エディットテキスト　リクワイヤード
+
 ※　aria-required="true"のみ時
-　　NVDA
+
+    <label for="name">お名前<span>必須</span></label>
+    <input type="text" id="name" aria-required="true" name="#">
+    <label for="mail">メールアドレス<span>必須</span></label>
+    <input type="text" id="mail" aria-required="true" name="#">
+
+　　[Windows7/NVDA2015.1jp/Firefox38.0.5]
 　　お名前必須　エディット　必須　オートコンプリート　空行
 　　メールアドレス必須　エディット　必須　オートコンプリート　空行
 
-　　PC-Talker7
+　　[Windows7/PC-Talker7/Internet Explorer11]
 　　お名前必須　必須の文字入力
 　　メールアドレス必須　必須の文字入力
+
+　　[iOS 9.0.2/VoiceOver/Safari]
+    お名前必須　テキストフィールド　必須
+　　メールアドレス必須　テキストフィールド　必須
+
+　　[Android4.4.2/TalkBack4.2.0.8/Sブラウザ]
+　　お名前必須　エディットテキスト　リクワイヤード
+　　メールアドレス必須　エディットテキスト　リクワイヤード
+
+※　NVDAが"invalid entry" の日本語を「無効なエントリー」と読み上げる件は、2015年8月25日にリリースされたNVDA 2015.3jpで「正しくない入力内容」に変更していただいています。
+　　https://osdn.jp/ticket/browse.php?group_id=4221&tid=35288
+　　https://ja.wikipedia.org/wiki/NonVisual_Desktop_Access#cite_ref-nava_jpan_news2015.3jp_14-0
