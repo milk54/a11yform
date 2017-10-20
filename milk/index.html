@@ -16,18 +16,18 @@
       </form>
     </header>
     <main role="main">
-      <h1>新規会員登録<em class="caution"><span>※</span>は必須項目です。</em></h1>
+      <h1>新規会員登録<em class="caution"><strong>※</strong>は必須項目です。</em></h1>
         <form method="post" action="#" id="new_member">
           <fieldset><legend>住所</legend>
             <div class="form-wrap">
               <div class="form-item">
-                <label for="postal_code">郵便番号<span>※</span></label>
+                <label for="postal_code">郵便番号<strong>※</strong></label>
                   <div class="user_action separate">
                     <input type="number" aria-required="true" id="postal_code" title="上3ケタ" name="#">―<input type="number" aria-required="true" title="郵便番号※下4ケタ" name="#">
                   </div>
               </div>
               <div class="form-item">
-                <label for="prefectures">都道府県<span>※</span></label>
+                <label for="prefectures">都道府県<strong>※</strong></label>
                   <div class="user_action">
                     <select id="prefectures" aria-required="true">
                       <option value="" selected="selected">選択して下さい。</option>
@@ -40,7 +40,7 @@
                 </div>
               </div>
               <div class="form-item">
-                <label for="city">市区町村<span>※</span></label>
+                <label for="city">市区町村<strong>※</strong></label>
                   <div class="user_action">
                     <input type="text" aria-required="true" id="city" name="#">
                   </div>
@@ -56,7 +56,7 @@
           <fieldset><legend>お名前・性別</legend>
             <div class="form-wrap">
               <div class="form-item">
-                <label id="your-name">氏名<span>※</span></label>
+                <label id="your-name">氏名<strong>※</strong></label>
                   <div class="user_action">
                     <label for="surname">姓</label>
                     <input type="text" id="surname" aria-required="true" title="氏名※" aria-describedby="your-name" name="#">
@@ -75,7 +75,7 @@
                   </div>
               </div>
               <div class="form-item">
-                <label id="gender" class="last">性別<span>※</span></label>
+                <label id="gender" class="last">性別<strong>※</strong></label>
                   <div class="user_action">
                   <label for="gender_man" class="radio_f"><input type="radio" id="gender_man" title="必須" aria-describedby="gender" name="#">男性</label>
                   <label for="gender_woman"><input type="radio" id="gender_woman" aria-describedby="gender" title="必須" name="#">女性</label>
@@ -86,13 +86,13 @@
           <fieldset><legend>連絡先</legend>
             <div class="form-wrap">
               <div class="form-item">
-                <label for="call_number">電話番号<span>※</span></label>
+                <label for="call_number">電話番号<strong>※</strong></label>
                 <div class="user_action separate">
                   <input type="tel" aria-required="true" id="call_number" title="市外局番" name="#">―<input type="tel" aria-required="true" title="市内局番" name="#">―<input type="tel" aria-required="true" title="加入者番号" name="#">
                 </div>
               </div>
               <div class="form-item">
-                <label for="mail">メールアドレス<span>※</span></label>
+                <label for="mail">メールアドレス<strong>※</strong></label>
                   <div class="user_action">
                     <input type="text" aria-required="true" aria-describedby="mail_description" id="mail" title="半角英数で入力してください" name="#">
                     <p role="alert" aria-live="assertive" id="error_message" tabindex="-1">メールアドレスは半角<br>6文字以上で入力してください。</p>
@@ -100,7 +100,7 @@
                 </div>
               </div>
               <div class="form-item">
-                <label for="mail_check" class="contact_address last">メールアドレス<strong>(確認用)</strong><span>※</span></label>
+                <label for="mail_check" class="contact_address last">メールアドレス<strong>(確認用)</strong><strong>※</strong></label>
                   <div class="user_action">
                     <input type="text" aria-required="true" aria-describedby="check_description" id="mail_check" title="確認の為再度入力してください" name="#"><p id="check_description">確認の為再度入力してください。</p>
                   </div>
