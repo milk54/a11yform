@@ -28,10 +28,6 @@ img {
 	line-height: 1;
 }
 
-span {
-	color: #840828;
-}
-
 fieldset {
 	border: none;
 }
@@ -119,6 +115,10 @@ h1 {
 	font-size: 60%;
 	font-weight: normal;
 	font-style: normal;
+}
+
+.required {
+	color: #840828;
 }
 
 #new_member {
